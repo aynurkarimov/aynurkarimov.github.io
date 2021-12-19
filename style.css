@@ -9,6 +9,7 @@ body {
   font-family: "Raleway", "sans-serif";
   font-size: 16px;
   font-weight: 400;
+  letter-spacing: 0;
   color: #fff;
 
   background: linear-gradient(90deg, #237fd5, #7023d5);
@@ -41,6 +42,7 @@ h5,
 h6 {
   margin: 0;
   font-weight: 400;
+  letter-spacing: 0;
 }
 
 ul,
@@ -80,6 +82,7 @@ li {
 .main__hello {
   font-size: 2em;
   font-weight: 600;
+  letter-spacing: 0;
 }
 
 /* Footer */
