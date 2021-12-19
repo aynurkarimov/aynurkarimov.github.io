@@ -1,2 +1,3 @@
 # imaynurkarimov.github.io
-A main repository.
+
+A personal page in the Internet.
