@@ -1,3 +1,1 @@
-# imaynurkarimov.github.io
-
-A personal page in the Internet.
+## A personal page on the Internet.
