@@ -1,0 +1,26 @@
+---
+const { pathname } = Astro.url;
+---
+
+<header>
+  <ul>
+    <li><a href="/" class:list={[{ active: pathname === '/' }]}>Index</a></li>
+  </ul>
+</header>
+
+
+<style>
+  header {
+    margin-left: auto;
+  }
+
+  .active {
+    text-decoration: underline;
+  }
+
+  header ul {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+  }
+</style>

@@ -1,0 +1,57 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Software Developer">
+	<div class="intro">
+		<header>
+			<h1>Aynur Karimov</h1>
+			<h4>Software Developer at <a href="https://emilia.app/">Emilia</a></h4>
+		</header>
+
+		<article>
+			<p>
+				I truly believe that code should prioritize simplicity and readability.
+			</p>
+		</article>
+
+		<footer>
+			<ul>
+				<li><a href="https://github.com/aynurkarimov">Github</a></li>
+				<li><a href="https://t.me/aynurkarimov">Telegram</a></li>
+			</ul>
+		</footer>
+	</div>
+</Layout>
+
+<style>
+	.intro {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 3rem;
+	}
+
+	article {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+	}
+
+	header {
+		display: flex;
+		flex-direction: column;
+		margin-right: auto;
+	}
+
+	footer {
+		margin-left: auto;
+	}
+
+	ul {
+		display: flex;
+		gap: 1rem;
+	}
+</style>

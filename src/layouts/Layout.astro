@@ -1,0 +1,99 @@
+---
+export interface Props {
+	title: string;
+}
+
+import "@fontsource/public-sans"
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="author" content="Aynur Karimov" />
+		<meta name="keywords" content="software, react, thoughts" />
+		<title>Aynur Karimov — {title}</title>
+	</head>
+	<body>
+		<div class="site">
+			<main>
+				<slot />
+			</main>
+		</div>
+	</body>
+</html>
+
+<style is:global>
+	:root {
+		--background: rgb(244, 244, 241);
+		--font: rgb(31, 29, 29);
+		--link: rgb(60, 93, 102);
+	}
+	
+	@media (prefers-color-scheme: dark) {
+		:root {
+			--background: rgb(21, 21, 21);
+			--font: rgb(238, 238, 238);
+			--link: rgb(82, 127, 140);
+		}
+	}
+
+	body {
+		margin: 0;
+		padding: 0;
+		font-family: "Public Sans", sans-serif;
+		font-size: 16px;
+		background-color: var(--background);
+	}
+
+	* {
+		box-sizing: border-box;
+	}
+
+	h1, h2, h3, h4, h5, h6, p {
+		margin: 0px;
+		padding: 2px 0;
+		line-height: 1.55;
+		color: var(--font);
+	}
+
+	h1, h2, h3 {
+		line-height: 1.15;
+	}
+
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	
+	a, a:visited {
+		color: var(--link);
+		text-decoration: none;
+	}
+
+	p {
+		padding: 0;
+		margin: 0;
+	}
+
+	.site {
+		margin: 0 auto;
+		padding: 0 1rem;
+		height: auto;
+		width: 100%;
+		max-width: 700px;
+	}
+
+	main {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding-top: 30vh;
+		gap: 3rem;
+	}
+</style>
